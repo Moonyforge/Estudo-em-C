@@ -1,0 +1,42 @@
+Exercício 1 – Nome e idade
+Peça ao usuário:nome e idade
+#include <stdio.h>
+
+int main(){
+    char nome[50];
+    int idade;
+    
+    printf("Qual e o seu nome?\n",nome);
+    scanf("%s",&nome);
+    
+    printf("\nQual e a sua idade? \n",idade );
+    scanf("%d",&idade);
+ 
+    printf("Ola %s , você tem %d anos",nome,idade);
+}
+
+//Gracinhas
+#include <stdio.h>
+#include <string.h>
+int main(){
+    char nome[50];
+    int idade;
+    char profissao[50];
+    
+    printf("Qual e o seu nome?\n";
+    scanf("%s",nome);  não usa & porque o nome do vetor ja e o endereço do primeiro vetor
+    
+    printf("\nQual e a sua idade? \n");
+    scanf("%d",&idade);
+    
+    printf("Qual e sua profissão?\n");
+    scanf("%s",profissao);
+    
+    if(idade>=25 && strcmp( profissao,"Policial")==0){ para comparar string tem que usar o strcmp e a biblioteca string
+        printf("Amor da vida de Grazi");
+    }
+    else{
+        printf("E uma pena,quem sabe na proxima");
+    }
+   return 0;
+}
